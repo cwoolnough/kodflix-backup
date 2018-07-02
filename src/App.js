@@ -14,7 +14,19 @@ class App extends Component {
         <p className="App-intro">
           How to get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <img src={BadBoys} alt="Bad Boys" className="BadBoys"/>;
+
+        <div className = "flex-container">
+          <h1>Black Mirror</h1>
+          <h1>Breaking Bad</h1>
+          <h1>Death Note</h1>
+        </div>
+
+        <div className = "flex-container">  
+          <h1>Game of Throne</h1>
+          <h1>The Walking Dead</h1>
+          <h1>Wire</h1>
+        </div>
+
       </div>
     );
   }

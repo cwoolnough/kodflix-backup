@@ -27,6 +27,8 @@
   to { transform: rotate(360deg); }
 }
 
-.BadBoys {
-  width: 100%;
+.flex-container {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
 }

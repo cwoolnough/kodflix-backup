@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import BadBoys from './imgs/badboys.jpg';
+import blackMirror from './images/blackMirror.jpg';
+import breakingBad from './images/breakingBad.jpg';
+import deathNote from './images/deathNote.jpg';
+import GOT from './images/gameOfThrones.jpg';
+import theWire from './images/theWire.jpg';
+import walkingDead from './images/walkingDead.jpg';
 
 class App extends Component {
   render() {
@@ -11,20 +16,18 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome Chris to Kodflix</h1>
         </header>
-        <p className="App-intro">
-          How to get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        
 
         <div className = "flex-container">
-          <h1>Black Mirror</h1>
-          <h1>Breaking Bad</h1>
-          <h1>Death Note</h1>
+          <div className= "item"><img src ={breakingBad} alt="Breaking Bad"/></div>
+          <div className= "item"><img src ={blackMirror} alt="Black Mirror"/></div>
+          <div className= "item"><img src ={deathNote} alt="Death Note"/></div>
         </div>
 
         <div className = "flex-container">  
-          <h1>Game of Throne</h1>
-          <h1>The Walking Dead</h1>
-          <h1>Wire</h1>
+          <div className= "item"><img src = {GOT} alt="Game of Throne" /></div>
+          <div className= "item"><img src = {theWire} alt="The Walking Dead" /></div>
+          <div className= "item"><img src = {walkingDead} alt="Wire" /></div>
         </div>
 
       </div>

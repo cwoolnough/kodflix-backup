@@ -58,8 +58,12 @@ img {
   opacity: 0;
   position: absolute;
   bottom: 0; 
+  height: 0;
+  transition: 1.5s; 
+  overflow: hidden; 
 }
 
 .item:hover .title{
   opacity: 1;
+  height: 15%;
 }

@@ -39,6 +39,7 @@ img {
 
 .item {
   flex: 1;
+  position: relative;
 }
 
 /* media query */
@@ -47,4 +48,18 @@ img {
   .flex-container {
     display: block;
   }
+}
+
+.title {
+  background-color: #222;
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+  bottom: 0; 
+}
+
+.item:hover .title{
+  opacity: 1;
 }

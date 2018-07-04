@@ -60,7 +60,8 @@ img {
   bottom: 0; 
   height: 0;
   transition: 1.5s; 
-  overflow: hidden; 
+  overflow: hidden;
+  text-align: center; 
 }
 
 .item:hover .title{

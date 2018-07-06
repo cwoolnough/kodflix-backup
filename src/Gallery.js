@@ -14,13 +14,11 @@ export default function Gallery() {
     <div>
       <div className="flex-container">
         <Covers src={breakingBad} alt="Breaking Bad" id='breaking-bad' />
-        <Covers src={blackMirror} alt="Black Mirror" id='black-mirror'/>
-        <Covers src={deathNote} alt="Death Note" id='death-note'/>
-      </div>
-      <div className="flex-container">
+        <Covers src={blackMirror} alt="Black Mirror" id='black-mirror' />
+        <Covers src={deathNote} alt="Death Note" id='death-note' />
         <Covers src={GOT} alt="Game of Thrones" id='game-of-thrones' />
         <Covers src={theWire} alt="The Wire" id='the-wire' />
-        <Covers src={walkingDead} alt="Walking Dead" id='walking-dead' />
+        <Covers src={walkingDead} alt="Walking Dead" id='walking-dead' /> 
       </div>
     </div>
   )

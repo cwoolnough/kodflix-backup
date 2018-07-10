@@ -8,4 +8,4 @@ export default function Covers(props) {
         <div className="title"><h1>{props.alt}</h1></div>
     </Link>
   )
-}
+} 

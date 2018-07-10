@@ -1,26 +1,27 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import TVShows from './gallery-get';
 
 class Details extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      message: "Hello, this will be the details page for each Movie & TV show :)"
-    }
+      show: {}
+    };
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        message: "Coming Soon!"
-      })
-    }, 3000)
+    let id = this.props.match.params.id;
+    let show = TVShows.find(function(show) {
+      return show.id === id;
+    });
+    this.setState({show: show});
   };
 
   render() {
     return (
       <div>
-        <p>{this.state.message}</p>
+        <p>{this.state.show.alt}</p>
         <Link to='/'>Home</Link>
       </div>
     )

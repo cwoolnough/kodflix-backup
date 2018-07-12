@@ -34,7 +34,7 @@ class Details extends React.Component {
             <img src={this.state.show.src} alt={this.state.show.alt} />
           </div>
           <div className="details-home">
-            <Link to='/'>Home!!</Link>
+            <Link to='/'>Home</Link>
           </div>
         </div>
       )

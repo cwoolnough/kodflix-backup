@@ -19,6 +19,7 @@
 
 .details-synopsis {
    display: flex;
+   margin: 1.5rem;
 }
 
 .details-synopsis > p {

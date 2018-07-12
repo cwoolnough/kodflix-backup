@@ -9,7 +9,7 @@ export default function Gallery() {
       <div className="flex-container">
         {
           TVShows.map(function (TVShow) {
-            return <Covers src={TVShow.src} alt={TVShow.alt} id={TVShow.id} key={TVShow.id} />
+            return <Covers src={TVShow.src} alt={TVShow.alt} id={TVShow.id} key={TVShow.id}  />
           })
         }
       </div>

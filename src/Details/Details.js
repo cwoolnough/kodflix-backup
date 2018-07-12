@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Redirect } from "react-router-dom";
-import TVShows from './gallery-get';
+import TVShows from '../gallery-get';
+import './Details.css';
 
 class Details extends React.Component {
   constructor() {
@@ -18,17 +19,23 @@ class Details extends React.Component {
     this.setState({ show: show });
   };
 
-
-
-
   render() {
     if (this.state.show === undefined) {
       return <Redirect to="/NotFound" />
     } else {
       return (
-        <div>
-          <p>{this.state.show.alt}</p>
-          <Link to='/'>Home</Link>
+        <div className="details">
+          <div className="details-title">
+            <p>{this.state.show.alt}</p>
+            <hr/>
+          </div>
+          <div className="details-synopsis">
+            <p>{this.state.show.synopsis}</p>
+            <img src={this.state.show.src} alt={this.state.show.alt} />
+          </div>
+          <div className="details-home">
+            <Link to='/'>Home</Link>
+          </div>
         </div>
       )
     }

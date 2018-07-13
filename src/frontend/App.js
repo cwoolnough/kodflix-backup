@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Gallery from './Gallery';
-import Details from './Details/Details.js';
-import NotFound from './NotFound/NotFound.js';
+import Details from '../Details/Details';
+import NotFound from './NotFound/NotFound';
 
 export default class App extends React.Component {
   render() {

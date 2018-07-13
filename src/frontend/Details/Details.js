@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from "react-router-dom";
-import TVShows from '../gallery-get';
+import TVShows from '../frontend/gallery-get';
 import './Details.css';
 
 class Details extends React.Component {
